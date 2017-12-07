@@ -32,6 +32,28 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# Flexible authentication solution for Rails with Warden.
+gem 'devise'
+# Materialize Sass version for Rails Asset Pipeline
+gem 'materialize-sass'
+# A simple Rails wrapper for Google Material Icons
+gem 'material_icons'
+# The authorization Gem for Ruby on Rails.
+gem 'cancancan'
+# mini replacement for RMagick
+gem 'mini_magick'
+# Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks
+gem 'carrierwave', '~> 1.0'
+# Object-based searching.
+gem 'ransack'
+# Pagination library for Rails, Sinatra, Merb, DataMapper, and more
+gem 'will_paginate', '~> 3.1.0'
+
+# A Gem to add Follow functionality for models
+gem 'acts_as_follower', github: 'tcocca/acts_as_follower', branch: 'master'
+# The ActiveRecord acts_as_commentable plugin 
+gem 'acts_as_commentable'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -47,6 +69,10 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  # Better error page for Rack apps
+  gem 'better_errors'
+  # Retrieve the binding of a method's caller in MRI 1.9.2+
+  gem 'binding_of_caller'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
