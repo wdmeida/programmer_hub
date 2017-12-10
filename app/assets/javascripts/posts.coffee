@@ -22,3 +22,5 @@ $(document).on "turbolinks:load", ->
     $(document).on "click", ".reload", (e)->
       $('#posts').html('')
       reload(1)
+      next_page = 2
+      finish_posts = false
