@@ -47,4 +47,7 @@ bower.json
 # Ignore Byebug command history file.
 .byebug_history
 
+# Ignore Upload Images in repository.
+/public/uploads
+
 # End of https://www.gitignore.io/api/rails
