@@ -18,11 +18,12 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
-
+ 
     respond_to do |format|
       if @post.save
         format.json { render json: @post, status: :created }
         format.html { redirect_to posts_path, notice: 'Post was successfully created.' }
+        format.js   { render :file => "/app/views/posts/show.js.erb" }
       else
         format.json { render json: @post.errors, status: :unprocessable_entity }
         format.html { redirect_to posts_path }
